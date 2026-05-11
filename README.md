@@ -15,6 +15,8 @@ El sistema reutiliza la base sensorial de la Actividad 1 (DHT22, fotorresistor, 
 - 5 LEDs indicadores de planta actual
 - 1 LED amarillo para representar la luz artificial de cabina
 
+<img width="1206" height="926" alt="image" src="https://github.com/user-attachments/assets/24963718-5e12-4ca7-a9ad-709c73949778" />
+
 ## Decisiones de diseño
 
 **Pulsadores en lugar de mando IR.** Se probó inicialmente con un receptor IR y mando virtual, pero las librerías `IRremote` y `Servo` entran en conflicto en Arduino Uno porque ambas usan el mismo timer del ATmega328. Cambiar a pulsadores físicos resuelve el problema y además es más realista para un panel de ascensor.
