@@ -72,50 +72,6 @@ CTRL LUZ: ON (manteniendo)
 **Respuesta de los algoritmos de control al modificar temperatura y luminosidad:**
 
 ```
-
-#include <DHT.h>
-#include <Wire.h>
-#include <LiquidCrystal_I2C.h>
-#include <Servo.h>
-#include <RTClib.h>
-
-#define DHT_PIN     2
-#define DHT_TYPE    DHT22
-#define LDR_PIN     A0
-#define TRIG_PIN    7
-…  DateTime current = rtc.now();
-  Serial.print("Fecha y hora: ");
-  Serial.print(current.day(),    DEC); Serial.print('/');
-  Serial.print(current.month(),  DEC); Serial.print('/');
-  Serial.print(current.year(),   DEC); Serial.print(" [");
-  Serial.print(current.hour(),   DEC); Serial.print(':');
-  Serial.print(current.minute(), DEC); Serial.print(':');
-  Serial.print(current.second(), DEC); Serial.print("]: ");
-}
-
-177void moverAscensor() {
-Simulation
-1 GND VCC SDA SCL
-DHT22
-PWR LED VCC GND DO AO DO LED
-HC-SR04
-VCC TRIG ECHO GND
-
-P1
-
-P2
-
-P3
-
-P4
-
-P5
-P1
-P2
-P3
-P4
-P5
-LUZ
 Fecha y hora: 11/5/2026 [14:17:9]: Sistema ascensor ACME iniciado. Planta 1.
 Pulsadores listos: P1=D3, P2=D12, P3=D13, P4=A2, P5=A3
 Fecha y hora: 11/5/2026 [14:17:9]: Planta: 1 | T: 25.0 C | H: 60.0 % | Lux: 301.5 | Luz%: 30 | Usuario: NO
